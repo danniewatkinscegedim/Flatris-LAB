@@ -17,7 +17,7 @@
     "dev:client": "babel-node server/start-dev-client.js",
     "dev:server": "babel-node server/start-dev-server.js",
     "dev:server:watch": "nodemon server/start-dev-server.js  --exec babel-node",
-    "build": "next build web",
+    "build": "NODE_OPTIONS=--openssl-legacy-provider next build web",
     "start": "babel-node server/start-prod.js"
   },
   "dependencies": {
